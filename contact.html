@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Aplikasi Belajar</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="features.html">Fitur</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section class="contact">
+            <h2>Hubungi Kami</h2>
+            <form onsubmit="kirimPesan(); return false;">
+                <fieldset>
+                    <legend>Formulir Kontak</legend>
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="minat">Minat Belajar:</label><br>
+                    <select id="minat" name="minat">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </select><br><br>
+                    <button onclick="alert('Pesan Anda terkirim!')">Kirim</button>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Aplikasi Ayo Belajar</p>
+    </footer>
+</body>
+</html>
